@@ -1,15 +1,32 @@
 <!DOCTYPE html>
 <html>
-  <head> </head>
+  <head>https://github.com/Davidkush/Survey-form</head>
   <body>
-    <h1 id="title"></h1>
+    <h1 id="title">Survey Form</h1>
     <p id="description">
       Thank you for taking the time to help us improve the platform Name
     </p>
     <form id="survey-form">
-      <input type="text" id="name" />
-      <input type="email" id="email" />
-      <input type="number" id="number" min="0" max="10" />
+      <label id="name-label"><input type="text" required id="name" placeholder="name">Enter name</input></label>
+     <label id="email-label"><input type="email" id="email" required placeholder="email">Enter email</input></label>
+     <label id="number-label"> 
+      <input type="number" id="number" min="0" max="10" placeholder="rating">Enter number</input></label> 
+     <select id="dropdown">
+       <option value="Very good">Very good</option>
+       <option value="good">Good</option>
+
+     </select>
+     <input type="radio" name="options" value="Recommended">Recommended</input>
+      <input type="radio" name="options"value="Not well">Not well</input>
+
+      <input type="checkbox" value="Challenges">Challenges</input>
+       <input type="checkbox" value="Front-end projects">Front-end projects</input>
+        <input type="checkbox" value="videos">videos</input>
+
+      <textarea placeholder="Comment section" cols="50" row="4" name="Comment section"></textarea>
+
+      <button type="submit" value="Submit" id="submit">Submit</button>
     </form>
+    
   </body>
 </html>
